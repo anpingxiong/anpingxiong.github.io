@@ -1,9 +1,9 @@
 ---
 layout: post
-category: vocore
-title: VoCore¿?¿?¿?¿?
+category: 随笔
+title: 第一个博客
 tagline: by Snail
-tags: [vocore, embedded, wifi]
+tags: [first anping]
 ---
 
 我要开始用git做个人博客了。
