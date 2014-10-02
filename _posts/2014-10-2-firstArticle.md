@@ -2,7 +2,7 @@
 layout: post
 category: 随笔
 title: 第一个博客
-tagline: by Snail
+tagline: by anping
 tags: [first anping]
 ---
 

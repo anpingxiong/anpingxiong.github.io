@@ -2,7 +2,7 @@
 layout: post
 category: 算法
 title: 快排总结
-tagline: by Snail
+tagline: by anping
 tags: [sort ,QuickSort ,快排 ,查找]
 ---
 
