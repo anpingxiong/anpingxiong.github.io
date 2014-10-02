@@ -1,9 +1,9 @@
 ---
 layout: post
-category:apche
+category: apache
 title: tomcat集群session无法复制的解决
 tagline: by anping
-tags: [apche,session]
+tags: [apache,session]
 ---
 
 
