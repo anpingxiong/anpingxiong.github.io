@@ -1,10 +1,10 @@
 ---
 layout: about
-title: About Me
+title: 关于我
 header: About Me
 group: navigation
 ---
- * **Name:** Yitao Yao
- * **Email:** [simpleyyt@gmail.com](mailto:simpleyyt@gmail.com)
- * **WeiBo:** [摇一摇SimpleLife](http://www.weibo.com/u/1836017133)
- * **Github:** [Simpleyyt](https://github.com/Simpleyyt)
+ * **姓名:** 熊安平
+ * **邮箱:** [anpingxiong@foxmail.com](anpingxiong@foxmail.com)
+ * **微博:** [梦想家onTheWay](http://www.weibo.com/anpingxiong)
+ * **Github:** [anpingxiong](https://github.com/anpingxiong)
