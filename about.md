@@ -1,7 +1,7 @@
 ---
 layout: about
 title: 关于我
-header: About Me
+header: 关于我
 group: navigation
 ---
  * **姓名:** 熊安平
