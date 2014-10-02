@@ -11,7 +11,7 @@ tags: [ObjectOutPutStream]
 
 
 
-##首先能追加数据，那么在构造FileOutPutStream时注意,将append设置为true。
+###首先能追加数据，那么在构造FileOutPutStream时注意,将append设置为true。
 
 	FileOutputStream(File file, boolean append)
 
@@ -19,7 +19,7 @@ tags: [ObjectOutPutStream]
 
 
 
-##其次为了能保证追加的对象被读取到，那么需要自己去新建一个对象输出流，并继承ObjectInputStream,并重写writerStreamHeader方法。
+###其次为了能保证追加的对象被读取到，那么需要自己去新建一个对象输出流，并继承ObjectInputStream,并重写writerStreamHeader方法。
 
 
 	class ObjectOutputStreamForAddObject extendsObjectOutputStream {
@@ -72,4 +72,4 @@ tags: [ObjectOutPutStream]
 
 
 
-##最后　在将对象写入文件的时候是调用ObjectOutputStreamForAddObject类，记得调用flush(),close()方法哦。
+###最后　在将对象写入文件的时候是调用ObjectOutputStreamForAddObject类，记得调用flush(),close()方法哦。
