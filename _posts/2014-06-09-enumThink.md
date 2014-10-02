@@ -1,9 +1,9 @@
 ---
 layout: post
-category: 算法
+category: JAVA
 title: 枚举回顾
 tagline: by anping
-tags: [JAVA,枚举]
+tags: [枚举]
 ---
 
 
