@@ -10,6 +10,8 @@ tags: [XML]
 xml (extensible markup language) 
 --------------------------------
 可扩展标签语言
+
+
 *	xml 是HTML的扩展，不是HTML的替代品。
 *	xml 常用来数据交互，即传输数据.
 *	html主要是用来显示数据。
