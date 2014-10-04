@@ -44,7 +44,8 @@ mysql事务
 ##事务隔离级别
 
 那么在处理以上情况则可以选择不同的事务隔离级别:
-1.	不提交读(read uncommitted)[脏数据]
+
+1.不提交读(read uncommitted)[脏数据]
 
 
 
@@ -55,7 +56,7 @@ mysql事务
 
 
 
-2.	提交读(read committed)[避免脏数据]
+2.提交读(read committed)[避免脏数据]
 	
 	
 
@@ -67,7 +68,7 @@ mysql事务
 
 
 
-3.	重复读(repeatable read)[mysql默认事务,解决不可重复读]
+3.重复读(repeatable read)[mysql默认事务,解决不可重复读]
 
 	
 	set session  transaction  isolation level repeatable read;//sql
@@ -77,7 +78,7 @@ mysql事务
 
 
 
-4.	序列化(serializable)[象加了共享锁]
+4.序列化(serializable)[象加了共享锁]
 
 
 
