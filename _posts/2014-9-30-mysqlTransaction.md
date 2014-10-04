@@ -46,6 +46,9 @@ mysql事务
 那么在处理以上情况则可以选择不同的事务隔离级别:
 1.	不提交读(read uncommitted)[脏数据]
 
+
+
+
 	set session transaction isolation level read uncommitted;//sql
 	
 	connection.setTransaction(Connection.TRANSACTION_READ_UNCOMMITTED);//java
@@ -55,6 +58,7 @@ mysql事务
 2.	提交读(read committed)[避免脏数据]
 	
 	
+
 	set session  transaction isolation level read committed;//sql
 
 	
@@ -71,18 +75,27 @@ mysql事务
 	
 	connection.setTransaction(Connection.TRANSACTION_REPEATABLE_READ);//java
 
+
+
 4.	序列化(serializable)[象加了共享锁]
 
-	
+
+
+
 	set session transaction isolation level  serializable;//sql
 
 
 	connection.setTransaction(Connection.TRANSACTION_SERIALIZABLE);//java
 
 
+
+
 ##不提交读 sql 测试
 会导致 读脏数据(如下，在事务B未提交的情况下，事务A读取到了B更新的数据)
 比如:
+
+
+
 	//事务A 
 	set session  transaction isolation  level  read uncommitted;
 	//事务B
