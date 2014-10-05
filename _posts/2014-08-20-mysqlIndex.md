@@ -65,6 +65,8 @@ mysql 索引
 2.	username,age
 3.	username
 
+
+
 	create index indexName on  table(column1,column2);
 
 
