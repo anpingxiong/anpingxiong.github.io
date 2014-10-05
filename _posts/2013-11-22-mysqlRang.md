@@ -28,6 +28,8 @@ mysql 表分区
 
 
 ##[mysql分区类型](http://baike.baidu.com/view/4318131.htm?fr=aladdin)
+##[mysql分区手册](http://dev.mysql.com/doc/refman/5.1/zh/partitioning.html)
+
 
 从百度百科中明白分区类型有四种。
 
