@@ -1,6 +1,6 @@
 ---
 layout: post
-category:mysql
+category: mysql
 title: 表分区
 tagline: by anping
 tags: [表分区]
