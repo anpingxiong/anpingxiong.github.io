@@ -164,4 +164,5 @@ cyclicBirrier也是线程同步类。是让所有的线程循环等待，直到�
 cycliBarrier和CountDownLatch的区别
 ----------------------------------
 
-与 CyclicBarrier 不同的是，CountdownLatch 不能重新使用.
+1.	与 CyclicBarrier 不同的是，CountdownLatch 不能重新使用.
+2.	CountdownLatch是某一个或则多个进程在等待其他的进程，而cyclicBirrier则是进程相互等待，即等待对象不同
