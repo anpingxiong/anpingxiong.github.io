@@ -15,13 +15,13 @@ ls
 	ls  		  显示当前目录下的所有文件和文件夹
 	ls -l         显示当前目录下的所有文件和文件夹信息，比如权限，所属用户,最后修改时间
 	ls -i         显示当前目录的所有文件和文件夹以及 他们在系统中的索引号
-	ls ./*        显示当前目录的所有文件和文件夹以及子文件夹下的所有文件和文件夹 
+	ls ./*        显示当前目录的所有文件和文件夹以及子文件夹下的所有文件和文件夹
 	ls -r         反序显示
 	ls -s         显示当前目录的所有文件和文件夹以及大小
 	ls -t         通过文件的最后修改时间来排序显示
 	ls -a         显示所有的隐藏文件
 
-cat 
+cat
 ---
 	cat filename 		 显示filename文件中的内容
 	cat -A filename 	 显示filename文件时将TAB内容以^I表示, 在行尾加上$符号
@@ -35,12 +35,13 @@ cat
 
 head
 ----
-	head -n 10 filename  显示filename前10行内容 
+	head -n 10 filename  显示filename前10行内容
 
 tail
 ----
 	tail -n 10 filename  显示filename尾部10行内容
-
+	tail -f filename     跟踪显示文件末尾的内容
+	tail -f filename | grep 'key' 跟踪显示文件中关键字为key的文件末尾内容
 
 sed
 ---
@@ -52,7 +53,7 @@ rename
 	rename 's/anping.txt/anping1.txt/' 将anping.txt更名为anping1.txt(该命令可以用正则方式修改)
 
 
-cp 
+cp
 --
 	cp file dir 		将file拷贝到dir目录中去 (不拷贝文件信息如权限和最后修改时间)
 	cp -i file dir      将file拷贝到dir目录中(当发现有相同文件则提示是否覆盖)
@@ -74,23 +75,17 @@ rm
 	rm -f file  直接删除file文件无任何提示
 	rm -r dir   删除文件夹及文件夹下的所有的文件
 
-rmdir 
+rmdir
 -----
 	rmdir dir   删除dir目录，但是前提是dir是空目录
 
 
-touch 
+touch
 -----
 	touch file		 用来修改文件时间，如果没有文件则创建file文件
-	touch -c file  	 不创建file 
+	touch -c file  	 不创建file
 
 echo
 ----
 	echo "aaaa" >> anping.txt  将aaaa字符串追加到anping.txt文件中
-	echo "aaaa"	 > anping.txt 	清空anping.txt并将aaaa写到文件中 		
-		
-	
-
-
-
-
+	echo "aaaa"	 > anping.txt 	清空anping.txt并将aaaa写到文件中
