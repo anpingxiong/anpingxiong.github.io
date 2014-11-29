@@ -19,6 +19,9 @@ tags: [枚举]
 
 怎么使用呢？？
 
+简单示例
+-------
+
 
 
 	package DefineTag;
@@ -57,3 +60,34 @@ tags: [枚举]
 	System.out.println(main.enum2);
 	}
 	}
+
+
+
+有时候通过枚举来定义常量还是不够的，比如Color 枚举可以定义red ,green 等，但是我们希望能够讲颜色搭配值放在里面，比如 Red(100,100,100)。
+
+那么很简单，只是需要定义一个私有的构造方法。当然也可以提供getValue方法来获取里面的值。
+
+
+enum赋值示例
+----------
+
+
+
+
+    package com.xiaomi.shank.user.util;
+
+		import com.xiaomi.miliao.xcache.XCache;
+
+		public enum QuotaCodeType {
+			DAY(XCache.EXPIRE_DAY), HOUR(XCache.EXPIRE_HOUR), FIVEMINU(XCache.EXPIRE_MINUTE * 5);
+
+			private int value;
+
+			private QuotaCodeType(int value) {
+				this.value = value;
+			}
+
+			public int getValue() {
+				return this.value;
+			}
+		}
