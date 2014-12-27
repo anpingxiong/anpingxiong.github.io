@@ -13,14 +13,14 @@ mysql 集群
 今天便记录对master/slave 架构， mysql 是如何做到主从数据库数据一致的。
 
 
-#mysql 主从复制的方式
+##mysql 主从复制的方式
 
 
 *   基于sql复制
 *   基于行复制
 *   sql与行复制混合
 
-#mysql 复制是如何工作的
+##mysql 复制是如何工作的
 
 *   首先master 接受了更新事务(增删改查),则或将该事务写入到二进制日志中.
 *   slave数据库服务器则启动着两个线程:
@@ -37,13 +37,13 @@ mysql 集群
 [高性能Mysql主从架构的复制原理及配置详解 ](http://blog.csdn.net/hguisu/article/details/7325124)
 
 
-#公司中如何方便的使用maste/slave　模式的mysql集群呢？
+##公司中如何方便的使用maste/slave　模式的mysql集群呢？
 
 *   使用rose框架,简单的只是需要在@SQL　注解上添加@Slave　　　[rose](http://www.54chen.com/life/rose-manual-1.html)
 *   与rose搭配使用的zookeeper，zookeeper中配置了集群数据库分别所在的host与端口，以及主从策略
 
 
-#我从公司构建分支式的架构中学到了什么?
+##我从公司构建分支式的架构中学到了什么?
 
 
 
