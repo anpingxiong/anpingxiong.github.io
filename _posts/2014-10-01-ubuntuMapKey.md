@@ -89,3 +89,12 @@ echo
 ----
 	echo "aaaa" >> anping.txt  将aaaa字符串追加到anping.txt文件中
 	echo "aaaa"	 > anping.txt 	清空anping.txt并将aaaa写到文件中
+
+
+scp
+----
+	准备工作: 1.linux 系统 .2.安装了ssh ssh-client .3.最好是关闭了防火墙
+	scp local_file remote_username@remote_ip:remote_folder 将本地文件拷贝到远程服务器
+	scp -r local_folder remote_username@remote_ip:remote_folder 将本地目录拷贝到远程服务器
+	scp remote_username@remote_ip:remote_file local_folder  将远程文件拷贝到本地文件夹中
+	scp -r  remote_username@remote_ip:remote_folder　local_folder　将远程文件夹拷贝到本地文件夹中
