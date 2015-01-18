@@ -103,8 +103,8 @@ scp
 find
 ----
 	 	find 查找，可以指定路径查找匹配的文件,默认是当前路径
-		find  /usr a.txt
-		find  a.txt
+		find  /usr -name 'a.txt'
+		find  -name 'a.txt'
 
 
 which
