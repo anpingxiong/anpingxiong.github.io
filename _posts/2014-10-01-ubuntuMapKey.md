@@ -98,3 +98,22 @@ scp
 	scp -r local_folder remote_username@remote_ip:remote_folder 将本地目录拷贝到远程服务器
 	scp remote_username@remote_ip:remote_file local_folder  将远程文件拷贝到本地文件夹中
 	scp -r  remote_username@remote_ip:remote_folder　local_folder　将远程文件夹拷贝到本地文件夹中
+
+
+find
+----
+	 	find 查找，可以指定路径查找匹配的文件,默认是当前路径
+		find  /usr a.txt
+		find  a.txt
+
+
+which
+-----
+	从path中查找
+
+whereis
+-------
+	从linux中自带的数据库中查找可执行文件
+
+
+	
