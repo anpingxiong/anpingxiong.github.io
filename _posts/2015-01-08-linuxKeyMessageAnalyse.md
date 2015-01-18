@@ -52,7 +52,7 @@ ifconfig
 *   在学校经常需要手动的配置ip ,则在linux下使用命令配置的方式是:
 
 
-    fconfig eth0 210.34.6.89 netmask 255.255.255.128 broadcast 210.34.6.127
+        ifconfig eth0 210.34.6.89 netmask 255.255.255.128 broadcast 210.34.6.127
 
 
 netstat
