@@ -49,7 +49,10 @@ ifconfig
 *   硬件地址 f8:b1:56:e3:15:16 :表示mac地址是 f8:b1:56:e3:15:16
 *   inet 地址:10.237.107.45　：表示ip地址是　10.237.107.45
 *   掩码:255.255.255.0 : 表示子网掩码
-*   在学校经常需要手动的配置ip ,则在linux下使用命令配置的方式是:fconfig eth0 210.34.6.89 netmask 255.255.255.128 broadcast 210.34.6.127
+*   在学校经常需要手动的配置ip ,则在linux下使用命令配置的方式是:
+
+
+    fconfig eth0 210.34.6.89 netmask 255.255.255.128 broadcast 210.34.6.127
 
 
 netstat
@@ -70,8 +73,9 @@ nslookup
 ========
 
 查询ip
-nslookup www.baidu.com
-ping www.baidu.com
+
+    nslookup www.baidu.com
+    ping www.baidu.com
 
 
 
