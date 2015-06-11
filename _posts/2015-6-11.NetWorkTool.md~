@@ -1,0 +1,17 @@
+---
+layout: post
+category: 开源
+title: 安卓下的网络测试工具
+tagline: by anping
+tags: [安卓下的网路测试]
+---
+
+android 网络环境测试
+====================
+
+
+在电脑上我们可以很方便的使用dig， ping， traceroute 等工具来测试网络环境。在手机上则没有这么方便，为了更好地进行网络排查。ok ,开源小工具推荐。
+
+
+安卓测试工具:
+[安卓测试工具](https://github.com/anpingxiong/networkcheck)
