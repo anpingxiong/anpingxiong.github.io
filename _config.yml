@@ -6,7 +6,7 @@ pygments: true
 
 markdown: kramdown
 
-highlighter:rouge
+highlighter: rouge
 
 # The title and tagline is showed on homepage
 #
