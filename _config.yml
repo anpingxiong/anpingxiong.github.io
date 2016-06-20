@@ -6,6 +6,8 @@ pygments: true
 
 markdown: kramdown
 
+highlighter:rouge
+
 # The title and tagline is showed on homepage
 #
 title :  xionganping 
