@@ -10,18 +10,20 @@ fragment 的onActivityResult 不被调用
 ---------------------
 
 	
-	简介
-	====
+简介
+====
 
-	使用Fragment 过程中总是会遇到各种各样的问题，比如不好判断当前可见fragment, fragment 的onActivityResult ,不能够处理fragment嵌套问题，fragment 的requesetCode 长度受到限制等等，
-
-
-	fragment 的onActivityResult ,不能够处理fragment嵌套问题 是因为activty的onActivityResult ,只是查询了一层fragment就没有查询了。
-	这个原因可以参考[Fragment中onActivityResult不被调用的解决方案](http://blog.csdn.net/shuaihj/article/details/46663109).
+使用Fragment 过程中总是会遇到各种各样的问题，比如不好判断当前可见fragment, fragment 的onActivityResult ,不能够处理fragment嵌套问题，fragment 的requesetCode 长度受到限制等等，
 
 
-	解决思路
-	========
+fragment 的onActivityResult ,不能够处理fragment嵌套问题 是因为activty的onActivityResult ,只是查询了一层fragment就没有查询了。
+
+
+这个原因可以参考[Fragment中onActivityResult不被调用的解决方案](http://blog.csdn.net/shuaihj/article/details/46663109).
+
+
+解决思路
+========
 	
 
 *    1.重载项目中fragment基类中startActivityForResult，自动传入可以标示fragment的值token ,并且重载任何有setResult 的地方，通过EventBus发出结果，最后fragment 基类接受这个事件，通过token 判断是否需要处理，需要处理则调用自己的onActivityResult,
